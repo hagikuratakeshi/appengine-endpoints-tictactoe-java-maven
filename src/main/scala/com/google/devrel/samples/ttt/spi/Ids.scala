@@ -14,7 +14,7 @@
 package com.google.devrel.samples.ttt.spi
 
 object Ids {
-  final val WEB_CLIENT_ID = "714002874840.apps.googleusercontent.com"
+  final val WEB_CLIENT_ID = "replace this with your Web client ID"
   final val ANDROID_CLIENT_ID = "replace this with your Android client ID"
   final val IOS_CLIENT_ID = "replace this with your iOS client ID"
   final val ANDROID_AUDIENCE = WEB_CLIENT_ID
