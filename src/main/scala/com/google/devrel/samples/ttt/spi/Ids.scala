@@ -1,5 +1,4 @@
-/* Copyright 2013 Google Inc. All Rights Reserved.
- *
+/* 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -12,19 +11,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.google.devrel.samples.ttt.spi
 
-package com.google.devrel.samples.ttt;
-
-import javax.jdo.JDOHelper;
-import javax.jdo.PersistenceManagerFactory;
-
-public final class PMF {
-    private static final PersistenceManagerFactory pmfInstance =
-        JDOHelper.getPersistenceManagerFactory("transactions-optional");
-
-    private PMF() {}
-
-    public static PersistenceManagerFactory get() {
-        return pmfInstance;
-    }
+object Ids {
+  final val WEB_CLIENT_ID = "714002874840.apps.googleusercontent.com"
+  final val ANDROID_CLIENT_ID = "replace this with your Android client ID"
+  final val IOS_CLIENT_ID = "replace this with your iOS client ID"
+  final val ANDROID_AUDIENCE = WEB_CLIENT_ID
+  final val EMAIL_SCOPE = "https://www.googleapis.com/auth/userinfo.email"
 }

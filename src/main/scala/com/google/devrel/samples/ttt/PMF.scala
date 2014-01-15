@@ -1,5 +1,4 @@
-/* Copyright 2013 Google Inc. All Rights Reserved.
- *
+/* 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -13,24 +12,13 @@
  * limitations under the License.
  */
 
-package com.google.devrel.samples.ttt;
+package com.google.devrel.samples.ttt
 
-/**
- * Defines the state of the board in a game of Tic Tac Toe. This class is only
- * used as a wire format.
- */
-public class Board {
-  /**
-   * The current state of the board, represented as a single dimensional array,
-   * e.g. ----X---- which represents a board with an X in the center.
-   */
-  private String state;
+import javax.jdo.JDOHelper
+import javax.jdo.PersistenceManagerFactory
+import scala.collection.JavaConversions._
 
-  public String getState() {
-    return state;
-  }
-
-  public void setState(String state) {
-    this.state = state;
-  }
+object PMF {
+  private val pmfInstance = JDOHelper.getPersistenceManagerFactory("transactions-optional")
+  def get(): PersistenceManagerFactory = pmfInstance
 }
