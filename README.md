@@ -2,7 +2,7 @@ appengine-endpoints-backend-scala
 ================================
 
 This application implements a simple backend for a Tic Tac Toe game using
-Google Cloud Endpoints, App Engine, and Java.
+Google Cloud Endpoints, App Engine, and Scala.
 
 ## Products
 - [App Engine][1]
