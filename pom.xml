@@ -132,6 +132,7 @@
         <executions>
           <execution>
             <goals>
+              <goal>enhance</goal>
               <goal>endpoints_get_discovery_doc</goal>
               <!--goal>endpoints_get_client_lib</goal-->
             </goals>
